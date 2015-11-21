@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "222bcec4ef93c3055c354934813b0370",
+    "packages": [
+        {
+            "name": "barzo/password-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/denys-potapov/password-generator.git",
+                "reference": "5f48cc5614437f81743fec070acf6e46b523d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/denys-potapov/password-generator/zipball/5f48cc5614437f81743fec070acf6e46b523d18c",
+                "reference": "5f48cc5614437f81743fec070acf6e46b523d18c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3.0"
+            },
+            "suggest": {
+                "ext-openssl": "Allows to use cryptographically strong random generator"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Barzo\\Password\\": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denys Potapov",
+                    "email": "denys.potapov@gmail.com",
+                    "homepage": "http://denyspotapov.com"
+                }
+            ],
+            "description": "PHP library for generating easy to remember but hard to guess passwords",
+            "homepage": "https://github.com/denys-potapov/password-generator",
+            "keywords": [
+                "password"
+            ],
+            "time": "2015-05-28 20:31:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "barzo/password-generator": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

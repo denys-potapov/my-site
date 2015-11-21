@@ -1,0 +1,5 @@
+{
+    "require": {
+        "barzo/password-generator": "dev-master"
+    }
+}
