@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Моя первая страничка
+title: моя первая страничка
 ---
 
 <div class="row">
@@ -14,18 +14,18 @@ title: Моя первая страничка
 <div class="row">
 
   <div class="col-sm-6">
-    <h2>Деанонимизация</h2>
-      <ul class="list-inline">
-        {% for social in site.data.social %}
-          <li><a href="{{ social.link }}">
-            <i class="fa fa-{{ social.icon }} fa-3x"></i>
-          </a></li>
-        {% endfor %}
-      </ul>
+    <h3>деанонимизация</h3>
+    <ul class="list-inline">
+      {% for social in site.data.social %}
+        <li><a href="{{ social.link }}">
+          <i class="fa fa-{{ social.icon }} fa-3x"></i>
+        </a></li>
+      {% endfor %}
+    </ul>
   </div>
 
   <div class="col-sm-6">
-    <h2>Словник технічних термінів</h2>
+    <h3>словник технічних термінів</h3>
     <dl class="dl-horizontal lead">
       <dt>@</dt>
       <dd>ра&#x301;влик</dd>
@@ -39,41 +39,96 @@ title: Моя первая страничка
 <div class="row">
   <div class="col-xs-12">
     <div class="page-header">
-      <h1>Статьи</h1>
+      <h1>проекты</h1>
     </div>
   </div>
 </div>
 
-  <h2>Проекты</h2>
-  
-  <p><a href="http://barzo.com.ua">barzo.com.ua</a> станет хорошим прайс-агрегатором</p>
-  <p><a href="http://kruzhalyk.com/">Кружалик ідіотів</a> пока не работает</p>
-  <p><a href="/password/">Генератор хороших паролей</a></p>
-  <h2>Статьи</h2>
-  <p>Умные на <a href="http://habrahabr.ru/users/patapsmile/topics/">хабре</a>, остальные в <a href="http://aymi-eoveuh.livejournal.com/">ЖЖ</a>.</p>
-  <h2>Картинки</h2>
-  <p><a href="http://denyspotapov.com/gif-sound.html">Анимированные гифки со звуком</a></p>
-  <p><a href="http://denyspotapov.com/abc/abc_color.pdf">Алфавит цветов (pdf)</a></p>
-  <p><a href="http://denyspotapov.com/deputy-migration.html">Міграція народних депутатів Україний</a></p>
-  <p><a href="http://denyspotapov.com/archive/nokiaplanh.com/">Nokia 3310 Touch</a></p>
-  <p><a href="http://denyspotapov.com/boobs.html">Сиськи на CSS</a></p>
-<div class="home">
+<div class="row">
+  <div class="col-xs-12 text-center lead">
+    <p><a href="https://barzo.com.ua">barzo.com.ua</a> станет хорошим прайс-агрегатором</p>
+    <p><a href="http://маркс.укр/">маркс.укр</a></p>
+    <p><a href="/password/">генератор хороших паролей</a></p>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h1>статьи</h1>
+    </div>
+  </div>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="row">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="col-sm-6">
+    <h3>
+      умные на <a href="http://habrahabr.ru/users/patapsmile/topics/">хабре</a>
+    </h3>
+    <ul>
+      {% for post in site.data.links.habr %}
+        <li><a href="{{ post.link }}">{{ post.title }}
+          
+        </a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
+  <div class="col-sm-6">
+    <h3>остальные в <a href="http://aymi-eoveuh.livejournal.com/">ЖЖ</a></h3>
+    <ul>
+      {% for post in site.data.links.lj %}
+        <li><a href="{{ post.link }}">{{ post.title }}
+          
+        </a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h1>разное</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6">
+    <h3>
+      видео
+    </h3>
+
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vPQR3E3ruVM" frameborder="0"></iframe>
+    </div>
+    <br />
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/54BMatbvjRk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+    <p class="lead text-center">
+    <a href="https://www.youtube.com/user/PatapSmile/videos">еще на ютубе&hellip;</a>
+    </p>
+  </div>
+
+  <div class="col-sm-6">
+    <h3>футболки</h3>
+    <a href="http://shop.rocktruba.com/product/setochka-552042/">
+      <img class="img-responsive center-block" src="http://setochka.prostoprint.com/static/products/full-bcb87f16c740db34721836952b4b8065.png">
+    </a>
+    <a href="http://shop.rocktruba.com/product/stalin-was-black/">
+     <img class="img-responsive center-block" src="http://setochka.prostoprint.com/static/products/full-0a9b67fb3039d2f50d74d0cadd1a9ea0.png"> 
+    </a>
+    <br>
+    <p class="lead text-center">
+    <a href="http://shop.rocktruba.com/">еще&hellip;</a>
+    </p>
+    
+  </div>
 
 </div>
