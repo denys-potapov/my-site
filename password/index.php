@@ -8,7 +8,14 @@ title: |
 
 ---
 
-<div class="hero-unit">
+<div class="row">
+  <div class="col-xs-12">
+    <p class="lead">
+        <a href="http://denyspotapov.com/">
+            &lt;&nbsp;denyspotapov.com
+        </a>
+    </p>
+    <div class="jumbotron">
 <?php
 
 require 'vendor/autoload.php';
@@ -58,11 +65,13 @@ if ($russian) {
 }
 ?>
 
-<p style="text-align: center;">
-<div class="btn-group">
-    <a class="btn btn-primary btn-large" href="?en">English</a>
-    <a class="btn btn-primary btn-large" href="?de">German</a>
-    <a class="btn btn-primary btn-large" href="?ru">Russian</a>
-    <a class="btn btn-primary btn-large" href="?ru-translit">Russain transliterated</a>
-</div>
+    <div class="btn-group">
+      <a class="btn btn-primary btn-large" href="?en">English</a>
+      <a class="btn btn-primary btn-large" href="?de">German</a>
+      <a class="btn btn-primary btn-large" href="?ru">Russian</a>
+      <a class="btn btn-primary btn-large" href="?ru-translit">Russain transliterated</a>
+    </div>
+
+    </div>
+  </div>
 </div>
